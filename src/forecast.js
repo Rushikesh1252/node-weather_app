@@ -17,7 +17,8 @@ const forecast= function(lat,long,callback)
         else
         {
            callback(undefined, ' It is currently ' + response.body.current.temperature +
-            ' degress out. There is a ' + response.body.current.precip + '% chance of rain.');
+            ' degress out. There is a ' + response.body.current.precip + '% chance of rain.It is '+response.body.current.humidity+' Degree humid.'+
+            'The wind speed present is '+response.body.current.wind_speed);
         }
     } )
     
