@@ -21,7 +21,6 @@ weatherform.addEventListener('submit',(e)=>{
         if(data.error)
         {
             messg1.textContent = data.error
-           
             console.log(data.error)
         }
         else
